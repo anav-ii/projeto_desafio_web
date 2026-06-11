@@ -91,3 +91,28 @@ console.log("A soma dos numeros ${num3 - num2}")
   console.log("TESTE RELACIONAIS ", 10 <= 5)
   console.log("TESTE LÓGICO ", (10 > 5) && (15 < 8))
   console.log("TESTE LÓGICO ", ( 10> 5) || (15 < 8)) 
+
+  //TESTE LÓGICO
+  let idade = 25
+  if(idade >= 18){
+    console.log('Maior de idade')
+  }else{
+    console.log('Menor de idade')
+  }
+/**
+ *RENOVAÇÃO DE CNH
+    MENOR QUE 18 - NÃO É PERMITIDO
+    18 ATÉ 49 - 10 ANOS
+    50 ATÉ 69 - 5 ANOS
+    70 ACIMA - 3 ANOS
+ */
+
+    if (idade < 18){
+        console.log('COM A IDADEDE ${idade}, NÃO É PERMITIDO CNH')
+    }else if(idade < 50){
+         console.log('COM A IDADE DE ${idade}, 10 ANOS PARA RENOVAR')
+    }else if (idade < 70) {
+        console.log('COM A IDDADE DE ${idade},  5 ANOS PARA RENOVAR')
+    }ELSE {
+        console.log('COM  IDDADE DE ${idade}, 3 ANOS PARA RENOVAR')
+    }
