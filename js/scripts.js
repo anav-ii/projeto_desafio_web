@@ -29,7 +29,7 @@ if (true){
     console.log(num)
 }
 
-consoge.log(num5)
+console.log(num5)
 
 num - 5
 console.log(num)
