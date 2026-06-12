@@ -113,6 +113,6 @@ console.log("A soma dos numeros ${num3 - num2}")
          console.log('COM A IDADE DE ${idade}, 10 ANOS PARA RENOVAR')
     }else if (idade < 70) {
         console.log('COM A IDDADE DE ${idade},  5 ANOS PARA RENOVAR')
-    }ELSE {
+    }else {
         console.log('COM  IDDADE DE ${idade}, 3 ANOS PARA RENOVAR')
     }
