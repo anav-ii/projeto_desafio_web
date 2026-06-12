@@ -14,10 +14,11 @@ formDados.addEventListener('submit' , (evt)=>{
     let situacaoIdade = ''
 
     if (idade >= 18){
-        situacaoIdade = '${nome} , vc é maior de idade'
+        situacaoIdade = `${nome} , vc é maior de idade`
     }else{
-        situacaoIdade = '${nome} , vc é menor de idade'
+        situacaoIdade = `${nome} , vc é menor de idade`
     }
+    divResultado.innerHTML = situacaoIdade
 
 })
 
