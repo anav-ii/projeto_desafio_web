@@ -11,7 +11,7 @@ formDados.addEventListener('submit' , (evt)=>{
     let largura = parseFloat(objFormDados.get('largura'))
     let altura = parseFloat(objFormDados.get('altura'))
      
-    let area = largura * alturagu
+    let area = largura * altura
 
    
     divResultado.innerHTML = `A área a ser pintada é de ${area.toFixed(2).replace
