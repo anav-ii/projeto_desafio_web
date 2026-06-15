@@ -1,5 +1,5 @@
 //PEGANDO ELEMENTOS DO DOM
-const formDados = document.querySelector('#calcúlo do combustivel')
+const formDados = document.querySelector('#formulario')
 const divResultado = document.querySelector('#div-dados')
 
 //CAPITURANDO O EVENTOSUBMIT DO FORMULÁRIO
@@ -8,19 +8,18 @@ formDados.addEventListener('submit' , (evt)=>{
 
     const objFormDados = new FormData(formDados)
 
-    let distância = parseFloat(objFormDados.get('distância'))
+    let distancia = parseFloat(objFormDados.get('distancia'))
     let consumo = parseFloat(objFormDados.get('consumo'))
-    let preço = parseFloat(objFormDados.get('preço')) 
+    let preco = parseFloat(objFormDados.get('preco')) 
 
-    let area = largura * altura
+    let LitrosNecessarios = distancia / consumo;
+    let ValorTotal = LitrosNecessarios * preco;
 
    
-    divResultado.innerHTML = `A distância a ser percorida ${area.toFixed(2).replace
-    (".",",")}m², a quntidade de combustivelnecessário ${parseFloat(area / 2)
-.toFixed(2).replace(".",",")} o valor total a pagar do combustivel ${parseFloat(valortotal)
-    .toFixed(2).replace(".",",")}`
+    divResultado.innerHTML = `quantidade de combustivel necessario ${LitrosNecessarios.toFixed(2).replace(".",",")} 
+    ValorTotal a pagar R$ ${ValorTotal.toFixed(2).replace(".",",")}` 
 
-formDados.request()
+formDados.reset()
 
 })
 
